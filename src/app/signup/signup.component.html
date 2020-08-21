@@ -1,0 +1,48 @@
+
+
+  <div class="container">
+    <h2><i>Welcome to PipChat!!</i> </h2>
+    <div class="card">
+      <div class="card-body tcenter"><form [formGroup]="profileForm"  (ngSubmit)="onSubmit()">
+  
+        <label >
+          First Name:
+          <input type="text" class="fwidth" formControlName="firstName">
+        </label>
+        <br>
+      
+        <label>
+          Last Name:
+          <input type="text"  class="fwidth" formControlName="lastName">
+        </label>
+        <br>
+
+        <label>
+          Country :
+          <input type="text"  class="fwidth" formControlName="country">
+        </label>
+        <br>
+
+        <label>
+          Email id   :
+          <input type="text"  class="fwidth" formControlName="emailid">
+        </label>
+        <br>
+
+        <label>
+          UserName:
+          <input type="text"  class="fwidth" formControlName="userName">
+        </label>
+        <br>
+
+        <label>
+          Age    :
+          <input type="number"  class="fwidth" formControlName="age">
+        </label>
+        <br>
+    
+        <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+      
+      </form></div>
+    </div>
+  </div>
